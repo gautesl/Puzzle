@@ -13,11 +13,8 @@
 [ext_resource path="res://Music/effects/turn.wav" type="AudioStream" id=11]
 
 [sub_resource type="Animation" id=1]
-
 resource_name = "Fade"
 length = 0.2
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:modulate")
 tracks/0/interp = 1
@@ -31,156 +28,75 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="World" type="Node2D" index="0"]
-
+[node name="World" type="Node2D"]
 position = Vector2( 0, 75 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Timer" type="Timer" parent="." index="0"]
+[node name="Timer" type="Timer" parent="."]
 
-process_mode = 1
-wait_time = 1.0
-one_shot = false
-autostart = false
-
-[node name="ReturnButton" type="Button" parent="." index="1"]
-
+[node name="ReturnButton" type="Button" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 8.0
 margin_right = 532.0
 margin_bottom = 518.0
 rect_min_size = Vector2( 50, 50 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 icon = ExtResource( 2 )
 flat = true
-align = 1
-_sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="TopPanel" parent="." index="2" instance=ExtResource( 3 )]
-
+[node name="TopPanel" parent="." instance=ExtResource( 3 )]
 visible = false
 margin_top = -75.0
 margin_bottom = 0.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="3"]
-
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -2
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer" index="0"]
-
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 534.983, 324.124 )
 texture = ExtResource( 4 )
 
-[node name="FadeScreen" type="CanvasLayer" parent="." index="4"]
-
+[node name="FadeScreen" type="CanvasLayer" parent="."]
 layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
-[node name="Sprite" type="Sprite" parent="FadeScreen" index="0"]
-
+[node name="Sprite" type="Sprite" parent="FadeScreen"]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 507.739, 338.113 )
 scale = Vector2( 10.3705, 6.87349 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 100, 100 )
-_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeScreen" index="1"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeScreen"]
 anims/Fade = SubResource( 1 )
-blend_times = [  ]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="5"]
-
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 volume_db = -5.0
-pitch_scale = 1.0
 autoplay = true
-mix_target = 0
-bus = "Master"
 
-[node name="SoundEffects" type="Node" parent="." index="6"]
+[node name="SoundEffects" type="Node" parent="."]
 
-[node name="Victory" type="AudioStreamPlayer" parent="SoundEffects" index="0"]
-
-stream = null
+[node name="Victory" type="AudioStreamPlayer" parent="SoundEffects"]
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="GreenOn" type="AudioStreamPlayer" parent="SoundEffects" index="1"]
-
+[node name="GreenOn" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource( 7 )
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="GreenOff" type="AudioStreamPlayer" parent="SoundEffects" index="2"]
-
+[node name="GreenOff" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource( 8 )
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="Restart" type="AudioStreamPlayer" parent="SoundEffects" index="3"]
-
+[node name="Restart" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource( 9 )
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="Teleport" type="AudioStreamPlayer" parent="SoundEffects" index="4"]
-
+[node name="Teleport" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource( 10 )
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="Turn" type="AudioStreamPlayer" parent="SoundEffects" index="5"]
-
+[node name="Turn" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource( 11 )
 volume_db = -10.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-
