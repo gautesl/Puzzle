@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=4]
+
+[node name="Level" type="Node2D" index="0" groups=[
+"Level",
+]]
+
+[node name="Targets" type="Node2D" parent="." index="0"]
+
+[node name="Target" parent="Targets" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 66.2258, 459.146 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target2" parent="Targets" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 962.477, 534.038 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Players" type="Node2D" parent="." index="1"]
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 134.808, 112.849 )
+_sections_unfolded = [ "Transform" ]
+speed = 120
+
+[node name="Player2" parent="Players" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 898.463, 112.849 )
+_sections_unfolded = [ "Transform" ]
+east = Vector2( -1, 0 )
+west = Vector2( 1, 0 )
+speed = 120
+
+[node name="Wall" parent="." index="2" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( 192.755, 209.944 )
+
+[node name="Wall3" parent="Wall" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 189.072 )
+scale = Vector2( 1, 1 )
+
+[node name="Wall4" parent="Wall" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 56.2715, 189.072 )
+scale = Vector2( 1, 1 )
+
+[node name="Wall5" parent="Wall" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 99.8822, 189.072 )
+scale = Vector2( 0.578772, 1 )
+
+[node name="Wall2" parent="Wall" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 106.2, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="Border" parent="." index="3" instance=ExtResource( 4 )]
+
+

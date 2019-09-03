@@ -1,0 +1,166 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scener/Portal.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/Restart.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scener/Field.tscn" type="PackedScene" id=6]
+
+[node name="Level" type="Node2D" groups=[
+"Level",
+]]
+
+[node name="Portals" type="Node2D" parent="." index="0"]
+
+[node name="Portal" parent="Portals" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 158.496, 298.615 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal2")
+
+[node name="Portal2" parent="Portals" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 527.636, 298.615 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal")
+
+[node name="Portal3" parent="Portals" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 535.32, 147.613 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal5")
+
+[node name="Portal4" parent="Portals" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 535.32, 448.256 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal6")
+
+[node name="Portal5" parent="Portals" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 158.496, 60.5491 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal3")
+
+[node name="Portal6" parent="Portals" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 158.496, 527.157 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal8")
+
+[node name="Portal8" parent="Portals" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 951.594, 72.7925 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal11")
+
+[node name="Portal9" parent="Portals" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 608.448, 299.975 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal12")
+
+[node name="Portal10" parent="Portals" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 623.768, 520.356 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal13")
+
+[node name="Portal11" parent="Portals" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 628.625, 71.4321 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal8")
+
+[node name="Portal12" parent="Portals" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 808.755, 297.254 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal9")
+
+[node name="Portal13" parent="Portals" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 954.315, 531.239 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal10")
+
+[node name="Targets" type="Node2D" parent="." index="1"]
+
+[node name="Target" parent="Targets" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 76.8991, 301.336 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Players" type="Node2D" parent="." index="2"]
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 351.694, 294.892 )
+_sections_unfolded = [ "Transform" ]
+east = Vector2( 0, 0 )
+west = Vector2( 0, 0 )
+total_scale = Vector2( 0.6, 0.6 )
+constant_motion = Vector2( 1, 0 )
+
+[node name="Border" parent="." index="3" instance=ExtResource( 4 )]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Fields" type="Node2D" parent="." index="4"]
+
+[node name="Restart" parent="Fields" index="0" instance=ExtResource( 5 )]
+
+position = Vector2( 537.348, 220.381 )
+
+[node name="Restart3" parent="Fields" index="1" instance=ExtResource( 5 )]
+
+position = Vector2( 525.289, 74.8206 )
+
+[node name="Restart4" parent="Fields" index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 526.796, 522.384 )
+
+[node name="Restart2" parent="Fields" index="3" instance=ExtResource( 5 )]
+
+position = Vector2( 535.987, 375.463 )
+
+[node name="Restart5" parent="Fields" index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 101.476, 368.163 )
+
+[node name="Restart6" parent="Fields" index="5" instance=ExtResource( 5 )]
+
+position = Vector2( 101.476, 231.142 )
+
+[node name="Restart7" parent="Fields" index="6" instance=ExtResource( 5 )]
+
+position = Vector2( 953.622, 194.533 )
+
+[node name="Restart8" parent="Fields" index="7" instance=ExtResource( 5 )]
+
+position = Vector2( 953.622, 408.112 )
+
+[node name="Field" parent="Fields" index="8" instance=ExtResource( 6 )]
+
+position = Vector2( 266.724, 62.0054 )
+scale = Vector2( 0.35, 0.35 )
+_sections_unfolded = [ "Transform" ]
+turn = Vector2( -1, 1 )
+
+[node name="Field2" parent="Fields" index="9" instance=ExtResource( 6 )]
+
+position = Vector2( 953.713, 297.35 )
+scale = Vector2( 0.35, 0.35 )
+_sections_unfolded = [ "Transform" ]
+turn = Vector2( -1, 1 )
+
+[node name="Field3" parent="Fields" index="10" instance=ExtResource( 6 )]
+
+position = Vector2( 821.757, 527.253 )
+scale = Vector2( 0.35, 0.35 )
+_sections_unfolded = [ "Transform" ]
+turn = Vector2( -1, 1 )
+
+

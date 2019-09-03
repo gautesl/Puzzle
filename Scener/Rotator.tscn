@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Rotator.gd" type="Script" id=1]
+[ext_resource path="res://Scener/Wall.tscn" type="PackedScene" id=2]
+
+[node name="Rotator" type="Node2D" groups=[
+"has_speed",
+]]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+speed = 1
+clockwise = true
+
+[node name="Wall" parent="." index="0" instance=ExtResource( 2 )]
+
+modulate = Color( 0.337255, 0.819608, 0.219608, 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Wall2" parent="." index="1" instance=ExtResource( 2 )]
+
+modulate = Color( 0.337255, 0.823529, 0.219608, 1 )
+rotation = 1.5708
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+

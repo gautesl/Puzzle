@@ -1,0 +1,276 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/LevelSelect.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/Sansation/Sansation-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/maze.png" type="Texture" id=3]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 55
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 50
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="LevelSelect" type="MarginContainer" groups=[
+"LevelSelect",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 14.0
+rect_min_size = Vector2( 1024, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 50
+custom_constants/margin_top = 0
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Margin", "Rect", "Size Flags", "Visibility", "custom_constants" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_right = 992.0
+margin_bottom = 675.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 942.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 0, 180 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 0
+custom_constants/margin_top = 50
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 50
+_sections_unfolded = [ "Rect", "custom_constants" ]
+
+[node name="NavButtons" type="HBoxContainer" parent="VBoxContainer/MarginContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 50.0
+margin_right = 942.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 920, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Margin" ]
+
+[node name="Back" type="Button" parent="VBoxContainer/MarginContainer/NavButtons" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 42.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 40, 80 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+hint_tooltip = "Previous stage
+"
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "<"
+flat = false
+align = 1
+_sections_unfolded = [ "Hint", "Rect", "Visibility" ]
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/NavButtons" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 46.0
+margin_right = 896.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 850, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Progress" type="Label" parent="VBoxContainer/MarginContainer/NavButtons/MarginContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 11.0
+margin_right = 850.0
+margin_bottom = 68.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+text = "0/12"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="Next" type="Button" parent="VBoxContainer/MarginContainer/NavButtons" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 900.0
+margin_right = 942.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 40, 80 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = ">"
+flat = false
+align = 1
+_sections_unfolded = [ "Hint", "Rect" ]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 184.0
+margin_right = 264.0
+margin_bottom = 534.0
+rect_min_size = Vector2( 0, 350 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 9
+alignment = 0
+_sections_unfolded = [ "Grow Direction", "Rect", "Size Flags", "Visibility" ]
+
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/HBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 150.0
+margin_right = 200.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 200, 200 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 8
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+_sections_unfolded = [ "Rect", "Size Flags" ]
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 204.0
+margin_right = 264.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 60, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+_sections_unfolded = [ "Margin", "Rect", "Size Flags", "Visibility" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Player" parent="VBoxContainer/HBoxContainer" index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 826.009, 15.4385 )
+scale = Vector2( 1.23677, 1.23677 )
+north = Vector2( 0, 0 )
+east = Vector2( 0, 0 )
+south = Vector2( 0, 0 )
+west = Vector2( 0, 0 )
+
+

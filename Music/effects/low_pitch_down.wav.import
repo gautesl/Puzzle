@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/low_pitch_down.wav-3ff4949d22779c0e98a46622938cbdbb.sample"
+
+[deps]
+
+source_file="res://Music/effects/low_pitch_down.wav"
+dest_files=[ "res://.import/low_pitch_down.wav-3ff4949d22779c0e98a46622938cbdbb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

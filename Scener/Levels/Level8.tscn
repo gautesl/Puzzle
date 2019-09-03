@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Portal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/Wall.tscn" type="PackedScene" id=5]
+
+[node name="Level" type="Node2D" groups=[
+"Level",
+]]
+
+[node name="Targets" type="Node2D" parent="." index="0"]
+
+[node name="Target" parent="Targets" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 400, 374.432 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target2" parent="Targets" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 622.11, 33.5847 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Players" type="Node2D" parent="." index="1"]
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 72.193, 80.9278 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Player2" parent="Players" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 550, 270 )
+_sections_unfolded = [ "Transform" ]
+north = Vector2( -1, 0 )
+east = Vector2( 0, 1 )
+south = Vector2( 1, 0 )
+west = Vector2( 0, -1 )
+
+[node name="Portal" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 84.7142, 270.103 )
+_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
+other = NodePath("../Portal2")
+
+[node name="Portal2" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 745.239, 349.906 )
+other = NodePath("../Portal")
+
+[node name="Border" parent="." index="4" instance=ExtResource( 4 )]
+
+[node name="Maze" parent="." index="5" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+position = Vector2( 312.156, 155.356 )
+rotation = 1.5708
+
+[node name="Wall2" parent="Maze" index="7" instance=ExtResource( 5 )]
+
+position = Vector2( 32.3102, 144.874 )
+rotation = -1.5708
+scale = Vector2( 6, 0.166667 )
+
+[node name="Wall6" parent="Maze" index="8" instance=ExtResource( 5 )]
+
+position = Vector2( 4.48141, 221.607 )
+rotation = -1.5708
+scale = Vector2( 3.60208, 0.166667 )
+
+[node name="Wall7" parent="Maze" index="9" instance=ExtResource( 5 )]
+
+position = Vector2( 3.60902, 135.665 )
+rotation = 1.38898e-013
+scale = Vector2( 0.409247, 1 )
+
+

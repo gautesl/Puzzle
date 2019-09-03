@@ -1,0 +1,166 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scener/Restart.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Cleanse.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Portal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Rotator.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scener/ShiftDirection.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=8]
+
+[node name="Level" type="Node2D" groups=[
+"Level",
+]]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Fields" type="Node2D" parent="." index="0"]
+
+[node name="Restart" parent="Fields" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 530, 220.381 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart4" parent="Fields" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 530, 522.384 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart7" parent="Fields" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 596.807, 153.274 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart2" parent="Fields" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 530, 375.463 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart3" parent="Fields" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 622.285, 291.954 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart5" parent="Fields" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 622.285, 291.954 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Restart6" parent="Fields" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 714.145, 291.954 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Cleanse" parent="Fields" index="7" instance=ExtResource( 2 )]
+
+position = Vector2( 962.731, 533.394 )
+
+[node name="Portals" type="Node2D" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="Portal" parent="Portals" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 205.224, 298.615 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal2")
+
+[node name="Portal2" parent="Portals" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 530, 298.615 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal")
+
+[node name="Portal3" parent="Portals" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 530, 147.613 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal6")
+
+[node name="Portal4" parent="Portals" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 530, 448.256 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal5")
+
+[node name="Portal5" parent="Portals" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 203.716, 60.5491 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal4")
+
+[node name="Portal7" parent="Portals" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 65.091, 229.238 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal8")
+
+[node name="Portal8" parent="Portals" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 65.091, 372.873 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal7")
+
+[node name="Portal6" parent="Portals" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 206.731, 527.157 )
+_sections_unfolded = [ "Transform" ]
+other = NodePath("../Portal3")
+
+[node name="Movables" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="Rotator" parent="Movables" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( 798.89, 284.887 )
+speed = 0.6
+
+[node name="Rotator2" parent="Movables" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 531.661, 100 )
+scale = Vector2( 0.5, 0.5 )
+speed = 0.6
+clockwise = false
+
+[node name="Targets" type="Node2D" parent="." index="3"]
+
+[node name="Target" parent="Targets" index="0" instance=ExtResource( 5 )]
+
+position = Vector2( 110.303, 296.325 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Border" parent="." index="4" instance=ExtResource( 6 )]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="ShiftDirection" parent="." index="5" instance=ExtResource( 7 )]
+
+position = Vector2( 378.899, 519.216 )
+_sections_unfolded = [ "Transform" ]
+rotators = [ NodePath("../Movables/Rotator2") ]
+
+[node name="ShiftDirection2" parent="." index="6" instance=ExtResource( 7 )]
+
+position = Vector2( 642.788, 519.216 )
+_sections_unfolded = [ "Transform" ]
+rotators = [ NodePath("../Movables/Rotator") ]
+
+[node name="Players" type="Node2D" parent="." index="7"]
+
+editor/display_folded = true
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 8 )]
+
+position = Vector2( 351.694, 294.892 )
+_sections_unfolded = [ "Transform" ]
+north = Vector2( 0, -0.5 )
+east = Vector2( 0.2, 0 )
+south = Vector2( 0, 0.5 )
+west = Vector2( -0.2, 0 )
+total_scale = Vector2( 0.6, 0.6 )
+constant_motion = Vector2( 1, 0 )
+
+

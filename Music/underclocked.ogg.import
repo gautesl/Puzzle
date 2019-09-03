@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/underclocked.ogg-1ce8d05d8cf179a11b3d5bf753288cca.oggstr"
+
+[deps]
+
+source_file="res://Music/underclocked.ogg"
+dest_files=[ "res://.import/underclocked.ogg-1ce8d05d8cf179a11b3d5bf753288cca.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

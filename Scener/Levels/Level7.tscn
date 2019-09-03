@@ -1,0 +1,124 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scener/Field.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/Wall.tscn" type="PackedScene" id=5]
+
+[node name="Level" type="Node2D" index="0" groups=[
+"Level",
+]]
+
+[node name="Field" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 81.0307, 508.283 )
+
+[node name="Targets" type="Node2D" parent="." index="1"]
+
+[node name="Target1" parent="Targets" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 69.2416, 57.1938 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target2" parent="Targets" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 966.458, 532.036 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Players" type="Node2D" parent="." index="2"]
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 67.8449, 186.382 )
+_sections_unfolded = [ "Transform" ]
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Player2" parent="Players" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 577.883, 251.372 )
+_sections_unfolded = [ "Transform" ]
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Border" parent="." index="3" instance=ExtResource( 4 )]
+
+editor/display_folded = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall" parent="Border" index="10" instance=ExtResource( 5 )]
+
+position = Vector2( 512, 192 )
+rotation = 1.5708
+
+[node name="Wall11" parent="Border" index="11" instance=ExtResource( 5 )]
+
+position = Vector2( 512, 461.5 )
+rotation = 1.5708
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall12" parent="Border" index="12" instance=ExtResource( 5 )]
+
+position = Vector2( 158.745, 461.5 )
+rotation = 1.5708
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall15" parent="Border" index="13" instance=ExtResource( 5 )]
+
+position = Vector2( 370.698, 286.189 )
+rotation = 1.5708
+scale = Vector2( 5.20097, 1 )
+
+[node name="Wall19" parent="Border" index="14" instance=ExtResource( 5 )]
+
+position = Vector2( 663.573, 202.433 )
+rotation = 1.5708
+scale = Vector2( 3.69809, 1 )
+
+[node name="Wall13" parent="Border" index="15" instance=ExtResource( 5 )]
+
+position = Vector2( 137.191, 254.337 )
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall20" parent="Border" index="16" instance=ExtResource( 5 )]
+
+position = Vector2( 799.672, 121.408 )
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall21" parent="Border" index="17" instance=ExtResource( 5 )]
+
+position = Vector2( 891.533, 309.454 )
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall22" parent="Border" index="18" instance=ExtResource( 5 )]
+
+position = Vector2( 882.641, 445.624 )
+scale = Vector2( 4.19976, 1 )
+
+[node name="Wall23" parent="Border" index="19" instance=ExtResource( 5 )]
+
+position = Vector2( 694.596, 445.624 )
+scale = Vector2( 2.91641, 1 )
+
+[node name="Wall18" parent="Border" index="20" instance=ExtResource( 5 )]
+
+position = Vector2( 610.703, 317.019 )
+scale = Vector2( 2.74476, 1 )
+
+[node name="Wall16" parent="Border" index="21" instance=ExtResource( 5 )]
+
+position = Vector2( 284.48, 120.22 )
+scale = Vector2( 3.92188, 1 )
+
+[node name="Wall17" parent="Border" index="22" instance=ExtResource( 5 )]
+
+position = Vector2( 99.3201, 120.22 )
+scale = Vector2( 2.71038, 1 )
+
+[node name="Wall14" parent="Border" index="23" instance=ExtResource( 5 )]
+
+position = Vector2( 329.834, 451.92 )
+scale = Vector2( 2.35488, 1 )
+
+

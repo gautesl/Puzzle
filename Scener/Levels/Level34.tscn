@@ -1,0 +1,151 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scener/Direction.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/ShiftDirection.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/TinyRotator.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=6]
+
+[node name="Level" type="Node2D" groups=[
+"Level",
+]]
+
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fields" type="Node2D" parent="." index="0"]
+
+position = Vector2( 100, 100 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Resets" type="Node2D" parent="Fields" index="0"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DirectionFields" type="Node2D" parent="Fields" index="1"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ConstantFields" type="Node2D" parent="Fields" index="2"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Direction" parent="Fields/ConstantFields" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( -28.74, 433.488 )
+direction = Vector2( 1, 0 )
+
+[node name="Direction3" parent="Fields/ConstantFields" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 864.58, 433.488 )
+direction = Vector2( -1, 0 )
+
+[node name="Direction2" parent="Fields/ConstantFields" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( -28.74, -47.8992 )
+direction = Vector2( 1, 0 )
+
+[node name="Direction4" parent="Fields/ConstantFields" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 864.58, -47.8992 )
+direction = Vector2( -1, 0 )
+
+[node name="Cleanses" type="Node2D" parent="Fields" index="3"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RotatorShifts" type="Node2D" parent="Fields" index="4"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ShiftDirection" parent="Fields/RotatorShifts" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 362.836, 135.315 )
+rotators = [ NodePath("../../../Movables/TinyRotator") ]
+
+[node name="ShiftDirection2" parent="Fields/RotatorShifts" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 463.424, 227.521 )
+rotators = [ NodePath("../../../Movables/TinyRotator") ]
+
+[node name="Targets" type="Node2D" parent="." index="1"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Target" parent="Targets" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 579.359, 228.457 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target2" parent="Targets" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 459.611, 337.427 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Movables" type="Node2D" parent="." index="2"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TinyRotator" parent="Movables" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( 512.521, 283.803 )
+scale = Vector2( 2, 2 )
+_sections_unfolded = [ "Transform" ]
+speed = 0.3
+
+[node name="Players" type="Node2D" parent="." index="3"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 5 )]
+
+position = Vector2( 67.4961, 269.441 )
+_sections_unfolded = [ "Transform" ]
+total_scale = Vector2( 0.6, 0.6 )
+
+[node name="Player2" parent="Players" index="1" instance=ExtResource( 5 )]
+
+position = Vector2( 951.236, 275.428 )
+_sections_unfolded = [ "Transform" ]
+total_scale = Vector2( 0.6, 0.6 )
+
+[node name="Portals" type="Node2D" parent="." index="4"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Walls" type="Node2D" parent="." index="5"]
+
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Border" parent="Walls" index="0" instance=ExtResource( 6 )]
+
+

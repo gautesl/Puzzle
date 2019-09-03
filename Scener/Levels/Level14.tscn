@@ -1,0 +1,132 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scener/Target.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scener/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scener/Border.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/Wall.tscn" type="PackedScene" id=4]
+
+[node name="Level" type="Node2D" groups=[
+"Level",
+]]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Targets" type="Node2D" parent="." index="0"]
+
+[node name="Target1" parent="Targets" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 557, 255 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target4" parent="Targets" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 557, 345 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target3" parent="Targets" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 467, 345 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Target2" parent="Targets" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 467, 255 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Players" type="Node2D" parent="." index="1"]
+
+[node name="Player" parent="Players" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 312, 100 )
+_sections_unfolded = [ "Transform" ]
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Player2" parent="Players" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 712, 100 )
+_sections_unfolded = [ "Transform" ]
+north = Vector2( 1, 0 )
+east = Vector2( 0, 1 )
+south = Vector2( -1, 0 )
+west = Vector2( 0, -1 )
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Player3" parent="Players" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 712, 500 )
+_sections_unfolded = [ "Transform" ]
+north = Vector2( 0, 1 )
+east = Vector2( -1, 0 )
+south = Vector2( 0, -1 )
+west = Vector2( 1, 0 )
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Player4" parent="Players" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 312, 500 )
+_sections_unfolded = [ "Transform" ]
+north = Vector2( -1, 0 )
+east = Vector2( 0, -1 )
+south = Vector2( 1, 0 )
+west = Vector2( 0, 1 )
+total_scale = Vector2( 0.7, 0.7 )
+
+[node name="Border" parent="." index="2" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall11" parent="Border" index="10" instance=ExtResource( 4 )]
+
+position = Vector2( 342.503, 150.966 )
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall20" parent="Border" index="11" instance=ExtResource( 4 )]
+
+position = Vector2( 623.91, 100.672 )
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall19" parent="Border" index="12" instance=ExtResource( 4 )]
+
+position = Vector2( 288.617, 378.487 )
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall21" parent="Border" index="13" instance=ExtResource( 4 )]
+
+position = Vector2( 288.617, 378.487 )
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall15" parent="Border" index="14" instance=ExtResource( 4 )]
+
+position = Vector2( 593.973, 377.289 )
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall16" parent="Border" index="15" instance=ExtResource( 4 )]
+
+position = Vector2( 475.423, 85.1049 )
+rotation = 1.5708
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall14" parent="Border" index="16" instance=ExtResource( 4 )]
+
+position = Vector2( 560.444, 421.732 )
+rotation = 1.5708
+scale = Vector2( 1.88899, 0.54609 )
+
+[node name="Wall22" parent="Border" index="17" instance=ExtResource( 4 )]
+
+position = Vector2( 608.343, 265.924 )
+rotation = 1.5708
+scale = Vector2( 1.58536, 0.54609 )
+
+[node name="Wall23" parent="Border" index="18" instance=ExtResource( 4 )]
+
+position = Vector2( 422.734, 408.399 )
+rotation = 1.5708
+scale = Vector2( 1.96035, 0.54609 )
+
+

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/restart.wav-5c454766d61921b0b97324174713f9a9.sample"
+
+[deps]
+
+source_file="res://Music/effects/restart.wav"
+dest_files=[ "res://.import/restart.wav-5c454766d61921b0b97324174713f9a9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

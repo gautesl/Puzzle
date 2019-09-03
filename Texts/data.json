@@ -1,0 +1,244 @@
+{
+    "messages":
+    [
+        [
+            "Use WASD or arrow keys to move",
+            "Green is good",
+            "Go to the green thing",
+            "Press space to reset",
+            "So, you see the green circle? In the middle?",
+            "Go to it!",
+            "It needs you",
+            "The circle is always greener on the other side",
+            "When you try a puzzle game, but get stuck on level 1",
+            "Probably just afk though"
+        ],
+        [
+            "Right is left, right?"
+        ],
+        [
+            "But, soo, hmm...",
+            "What is this blue?",
+            "Press enter or space to reset"
+        ],
+        [
+            "Press enter or space to reset"
+        ],
+        [
+            "Getting the hang of this",
+            "Press enter or space to reset",
+        ],
+        [
+            "These controls again",
+            "Press backspace to go back to main menu",
+            "Gotta get down there",
+            "One at a time",
+            "Just need to touch the middle of the circles"
+        ],
+        [
+            "This looks simple enough",
+            "Hmmmm",
+            "It's a maze(ing)!",
+            "These directions don't add up",
+            "The blue field can change the direction"
+        ],
+        [
+            "Don't be so predictable",
+            "Press enter to reset",
+            "The timer also resets when you try again"
+        ],
+        [
+            "Somewhat familiar controls",
+            "But is it simple?",
+            "How to...",
+            "Can we group them up?",
+            "Must use the walls to group up I guess"
+        ],
+        [
+            "Ooo, more portals!",
+            "Such fun!",
+            "Such symmetry!",
+            "Much wow",
+            "So one goes strait, and one goes down",
+            "Do one at a time, easy win"
+        ],
+        [
+            "What happened to left and down?",
+            "Only one target though, how hard can it be",
+            "Did you try them all yet?",
+            "Every possible combination?",
+            "Where have you been, and where can you get to?"
+        ],
+        [
+            "Now there are two of them!",
+            "And they move to the right at the same time?",
+            "Portals portals portals portals PORTALS!!",
+            "Gotta try 'em all!",
+            "Nice little ledge to rest on down there"
+        ],
+        [
+            "Well this looks easy",
+            "Oh wait",
+            "Press enter to reset",
+            "Oh my",
+            "Oh boy",
+            "Goodness",
+            "How do you even",
+            "Try... Trying a bunch of stuff?"
+        ],
+        [
+            "Four again",
+            "... and none of them goes in the same direction?",
+            "Try not to collide on the walls",
+            "These walls",
+            "Remember you can press space to reset ;)",
+            "Or backspace to go back to main menu",
+            "Tried going around them all?",
+            "There is an annoyingly straight forward soulution to this you know"
+        ],
+        [
+            "Only one portal?",
+            "Oo, but it goes to several locations!",
+            "Now to get to that last room",
+            "Try the same portals several times!",
+            "There is a pattern if you can figure it out"
+        ],
+        [
+            "New kind of portals?",
+            "It seems to be locked",
+            "Can it be unlocked?",
+            "We need to coordinate this",
+            "Careful not to go out again!",
+            "Two inside and one outside is the way to go!",
+            "Just be careful about the directions"
+        ],
+        [
+            "Rooms now?",
+            "First off, which portals goes where?",
+            "Press space if you get stuck"
+        ],
+        [
+            "Uh oh",
+            "Can we go outside of the screen?",
+            "If we nudge the one over here",
+            "Then press against the wall over there",
+            "Oh boy, oh girl, oh non-binary",
+            "Such inclusive"
+        ],
+        [
+            "Movement!",
+            "Rotations!",
+            "How does these collisions work exactly?",
+            "Gotta coordinate this spinning",
+            "Getting to the room not enough appearently",
+            "Luckily the portal is a one-way portal!"
+        ],
+        [
+            "You spin me round and round",
+            "Getting dizzy? Hope not",
+            "It is rather slow",
+            "Note that the edges will change your direction!"
+        ],
+        [
+            "More movement!",
+            "Sooo, this is about timing, huh?",
+            "What if we collide with the wall?",
+            "Then we can wait for the perfect opportunity!"
+        ],
+        [
+            "Oooh, so close!",
+            "And portals",
+            "Do they affect the timing?",
+            "Nothing to collide with now",
+            "Try the different portals!",
+            "You can see the coordinates of the balls by toggling the position"
+        ],
+        [
+            "Wait, four now?",
+            "Yuck, too much puzzle in this puzzle",
+            "Try getting two straight first, then fix the others",
+            "Press enter to reset"
+        ],
+        [
+            "Spikey red stuff! Let's try it out!",
+            "No wait, do not try it out",
+            "It only resets though no real need for panic"
+        ],
+        [
+            "Fast pace spinning!",
+            "Gotta think fast!",
+            "Or take your time. Not really any hurry",
+            "Which rotator can change direction?",
+            "And also, when to use which?"
+        ],
+        [
+            "Don't go too far!",
+            "Press enter to reset",
+            "Remember to reverse enough"
+        ],
+        [
+                "Two spinning doors, huh?",
+                "Just ignore the third ball",
+                "Several locks for one portal?",
+                "Now for the hard part",
+                "When to go where?",
+                "Always leave a way to the reverse"
+        ],
+        [
+            "Portals!",
+            "Aaaaand resetting walls...",
+            "Do try the different combinations",
+            "And from every possible angle!"
+        ],
+        [
+            "Try the left and right movement keys!",
+            "Gotta get to that branch",
+            "And also, how to get out of there?"
+        ],
+        [
+            "Not enough movement here",
+            "Which direction is the correct one?",
+            "Get each ball in position",
+            "Then just try a bunch of stuff",
+            "... or you can figure it out by using your super brain!"
+        ],
+        [
+            "Just go through",
+            "Arrows?",
+            "You need the extra speed",
+            "Super boost!"
+        ],
+        [
+            "Ooo, shiny next level with much fun!",
+            "Muuuuch fun."
+        ]
+    ],
+
+    "stars":
+    [
+        [30, 15, 6],
+        [45, 12, 6]
+    ],
+
+    "backgrounds":
+    [
+        "stars.jpeg",
+        "universe.jpeg",
+        "space3.jpg",
+        "red_space.jpg",
+        "northern_lights.jpg"
+    ],
+
+    "modulates":
+    [
+        "0100ff",
+        "8100a1",
+        "ff4646"
+    ],
+
+    "music":[
+        "res://Music/underclocked.ogg",
+        "res://Music/come_and_find_me.ogg",
+        "res://Music/we're_the_resistors.ogg"
+    ]
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/we're_the_resistors.ogg-73a539b3f5a8155d5da35bdda82f7b7c.oggstr"
+
+[deps]
+
+source_file="res://Music/we're_the_resistors.ogg"
+dest_files=[ "res://.import/we're_the_resistors.ogg-73a539b3f5a8155d5da35bdda82f7b7c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

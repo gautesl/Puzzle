@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/turn.wav-d8d7b81f17d9b7b229b94193b4ab2965.sample"
+
+[deps]
+
+source_file="res://Music/effects/turn.wav"
+dest_files=[ "res://.import/turn.wav-d8d7b81f17d9b7b229b94193b4ab2965.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
